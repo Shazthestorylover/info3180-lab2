@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+
+{% block css %}
+
+<link rel = "stylesheet" type = "text/css" href = {{ url_for('static', filename='css/Profile.css') }}>
+
+{%endblock%}
+
+
+
+
+
+{% block main %}
+
+
+
+<div class = "profile_Panel">
+    <div id = "Sub_Panel_1">
+        <img id = "Profile_Picture" src="{{ url_for('static', filename = 'profile_picture.jpg')}}">
+        <h1> Shazzam Austin </h1>
+        <h3> @ShazTheStoryLover </h3>
+        <h3> St.Catherine, Jamaica </h3>
+        <h3> {{date}} </h3>
+
+    </div>
+        
+    
+
+    <div id="Sub_Panel_2" class="follow_button_container">
+        <div class = "SubPanel">
+            <div id = "Content_Panel_1">
+                <p>     I am an extremely intelligent young man with a love for Video Game Development, Artificial Intelligence, Graphics and Robotics Engineering.
+                    Please feel free to contact me if you want to work with me in the future.
+                </p>
+            </div>
+
+
+
+
+            <div id = "Content_Panel_2">
+                <div class = "box">
+                    <div id = "post">
+    
+                        <h4> 124 </h4>
+                        <h5> Post </h5>
+    
+                    </div>
+    
+    
+                    <div id = "following">
+    
+                        <h4> 20 </h4>
+                        <h5> Following </h5>
+                        
+                    </div>
+    
+                    <div id = "followers">
+    
+                        <h4>40,000,000 </h4>
+                        <h5>Followers</h5>
+                        
+                    </div>
+                </div> 
+            </div>
+
+            <div id = "Content_Panel_3" class = "follow_button_container">
+                <button id = "follow_botton" type = "button"> Follow </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+{%endblock%}
